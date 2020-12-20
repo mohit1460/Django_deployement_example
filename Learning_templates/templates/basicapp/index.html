@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+{% extends 'basicapp/basic.html' %}
+{% block body_block %}
+    <h1>Welcome to index page</h1>
+    <h1>{{ text|cut:'Mohit'}}</h1><!--custom template filter -->
+    <h1>{{ number|add:'11' }}</h1>
+    <!-- here number is a key in view file dictionary and add is a builtin template filter -->
+  {% endblock %}
